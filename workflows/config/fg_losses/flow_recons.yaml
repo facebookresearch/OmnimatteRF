@@ -1,0 +1,7 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+flow_recons:
+  name: flow_recons
+  config:
+    inputs: [composite_flow, fg_gt_flow, fg_gt_flow_confidence]
+    alpha: 1

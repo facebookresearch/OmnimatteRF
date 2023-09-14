@@ -1,0 +1,7 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+offset_reg:
+  name: l1
+  config:
+    inputs: [bg_offset, bg_offset_target]
+    alpha: 0.001

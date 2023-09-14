@@ -1,0 +1,9 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+input: ???
+output: ???
+model: raft-things.pth
+scale: 1
+device: cuda:0
+forward: true
+backward: true

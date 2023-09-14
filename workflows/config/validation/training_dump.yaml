@@ -1,0 +1,9 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+training_dump:
+  config:
+    name: training_dump
+    step_size: 1000
+    n_frames: 1
+    write_tensorboard: true
+  pre_train: true

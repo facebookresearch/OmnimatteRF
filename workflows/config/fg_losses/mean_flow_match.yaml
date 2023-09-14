@@ -1,0 +1,7 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+mean_flow_match:
+  name: mean_flow_match
+  config:
+    inputs: [alpha_layers_extra, flow_mean_dist_map]
+    alpha: 0.1

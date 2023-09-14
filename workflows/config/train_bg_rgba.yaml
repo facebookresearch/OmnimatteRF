@@ -1,0 +1,10 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+defaults:
+  - train_bg
+  - override data_sources: [mask,rgba_mask,colmap]
+  - _self_
+
+data_sources:
+  mask:
+    blank_layer_only: true

@@ -1,0 +1,22 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+defaults:
+  - train
+  - fg_losses: [alpha_reg,brightness_reg,flow_recons,mask,recons,warped_alpha]
+  - override fg_model: omnimatte_noise
+  - override trainer: omnimatte
+  - override data_sources: [mask,flow,homography]
+  - override validation: []
+  - _self_
+
+validation: {}
+
+scheduler:
+  fg:
+    config:
+      decay_start: 12000
+
+n_steps: 12000
+save_checkpoint:
+  step_size: 3000
+  min_step: 9000

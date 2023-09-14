@@ -1,0 +1,19 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+images: ???
+masks:
+output: ???
+colmap_binary: colmap
+colmap_options:
+  feature_extractor:
+    SiftExtraction.use_gpu: 0
+    SiftExtraction.upright: 0
+    ImageReader.camera_model: OPENCV
+    ImageReader.single_camera: 1
+  exhaustive_matcher:
+    SiftMatching.use_gpu: 0
+  mapper:
+    Mapper.ba_refine_principal_point: 1
+    Mapper.filter_max_reproj_error: 2
+    Mapper.tri_complete_max_reproj_error: 2
+    Mapper.min_num_matches: 32

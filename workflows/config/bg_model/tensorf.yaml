@@ -1,0 +1,37 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+name: tensorf
+config:
+  N_voxel_init: 2097156
+  N_voxel_final: 262144000
+  upsamp_list: [2000,3000,4000,5500]
+  update_AlphaMask_list: [2500]
+  density_n_comp: [16,4,4]
+  appearance_n_comp: [48,12,12]
+  app_dim: 27
+  shadingMode: MLP_Fea
+  alphaMask_thres: 0.0001
+  density_shift: -10
+  distance_scale: 25
+  pos_pe: 6
+  view_pe: 2
+  fea_pe: 2
+  featureC: 128
+  step_ratio: 0.5
+  fea2denseAct: relu
+  nSamples: 1000000
+  lr_upsample_reset: true
+  viewpe_skip_steps: 0
+  # dep injection
+  contraction:
+  prev_global_step:
+  global_step_offset:
+  aabb:
+  near:
+  far:
+  hwf:
+  device:
+train: true
+optim:
+  lr: 0.02
+  lr_basis: 0.001

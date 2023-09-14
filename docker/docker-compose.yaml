@@ -1,0 +1,24 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+version: '3.8'
+services:
+  matting:
+    image: 'logchan/matting:20221229.01'
+    container_name: 'matting'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: 'unless-stopped'
+    volumes:
+      - /home/user/research/code:/code
+      - /home/user/research/data:/data
+      - /home/user/research/output:/output
+      - /home/user/research/devenv/matting/home:/home/user
+    environment:
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    working_dir: /code/OmnimatteRF
+    shm_size: '8g'

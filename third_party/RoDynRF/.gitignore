@@ -1,0 +1,6 @@
+*.pyc
+__pycache__
+dataset
+log
+weights
+/local

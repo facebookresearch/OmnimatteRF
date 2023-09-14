@@ -1,0 +1,7 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+warped_alpha:
+  name: l1
+  config:
+    inputs: [warped_alpha_layers, alpha_layers]
+    alpha: 0.01

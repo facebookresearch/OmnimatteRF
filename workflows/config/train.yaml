@@ -1,0 +1,61 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+defaults:
+  - fg_losses: []
+  - bg_losses: []
+  - validation: [training_dump]
+  - fg_model: dummy
+  - bg_model: dummy
+  - trainer: matting
+  - data_sources: [mask,flow,colmap]
+  - _self_
+
+output: ???
+hydra:
+  run:
+    dir: ${output}
+
+fg_losses: {}
+bg_losses: {}
+
+dataset:
+  path: ???
+  scale: 1
+  image_subpath: rgb_1x
+
+contraction:
+
+scheduler:
+  fg:
+    name: exp_lr
+    config:
+      decay_start: 10000
+      decay_rate: 0.1
+      decay_steps: 10000
+      min_rate: 0.1
+  bg:
+    name: exp_lr
+    config:
+      decay_start: 0
+      decay_rate: 0.1
+      decay_steps: 30000
+      min_rate: 0.01
+
+save_checkpoint:
+  step_size: 3000
+  min_step: 9000
+  folder:
+save_pretrain_checkpoint: false
+save_final_checkpoint: true
+
+checkpoint:
+load_fg: true
+load_bg: true
+reset_global_step: false
+reset_bg_optimization: false
+
+n_steps: ???
+device: cuda:0
+debug: false
+profile: false
+seed: 3

@@ -1,0 +1,16 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+defaults:
+  - train
+  - bg_losses: [recons,tv_reg]
+  - override bg_model: tensorf
+  - override data_sources: [mask,colmap]
+  - override validation: [training_dump]
+  - _self_
+
+n_steps: 15000
+
+save_checkpoint:
+  step_size: 5000
+  min_step: 10000
+  folder:

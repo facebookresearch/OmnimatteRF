@@ -1,0 +1,11 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+defaults:
+  - train_both
+  - _self_
+
+n_steps: 10000
+
+save_checkpoint:
+  step_size: 2000
+  min_step: 6000

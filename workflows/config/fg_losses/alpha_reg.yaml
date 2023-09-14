@@ -1,0 +1,10 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+alpha_reg:
+  name: alpha_reg
+  config:
+    inputs: [composite_alpha, global_step]
+    alpha: 1
+    lambda_alpha_l1: 0.01
+    lambda_alpha_l0: 0.005
+    l1_end_step: 1500

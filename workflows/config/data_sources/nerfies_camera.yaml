@@ -1,0 +1,6 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+nerfies_camera:
+  subpath: nerfies
+  contraction:
+  compute_ndc_aabb: true

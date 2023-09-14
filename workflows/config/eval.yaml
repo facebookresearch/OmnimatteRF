@@ -1,0 +1,46 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+defaults:
+  - trainer: matting
+  - fg_model: dummy
+  - bg_model: dummy
+  - data_sources: [mask,flow,colmap]
+  - _self_
+
+output: ???
+hydra:
+  run:
+    dir: ${output}
+
+dataset:
+  path:
+  scale:
+  image_subpath:
+data_root: /data/matting/matting
+
+contraction:
+
+alpha_threshold: 0.5
+
+checkpoint: ???
+device: cuda:0
+
+eval_bg_layer: false
+
+write_videos: true
+debug_count: 0
+raw_data_keys: []
+raw_data_indices: []
+
+# adding new output to existing evals
+migration_mode:
+
+# defaults to dataset.path basename
+dataset_name:
+# defaults to get <experiment>/checkpoints/xxx.ckpt (checkpoint.parent.parent.name)
+experiment:
+# default loaded from checkpoint
+step:
+
+# defaults to <experiment>/config.yaml
+train_config_file:

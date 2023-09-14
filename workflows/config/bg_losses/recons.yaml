@@ -1,0 +1,7 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+recons:
+  name: mse
+  config:
+    inputs: [bg_rgb, bg_gt_rgb]
+    alpha: 1.0

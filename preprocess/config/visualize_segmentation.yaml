@@ -1,0 +1,7 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+instances: ???
+output: ???
+rgb: ???
+draw_masks: true
+draw_mask_indices: [0,1]

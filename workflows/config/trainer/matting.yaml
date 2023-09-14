@@ -1,0 +1,25 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+name: matting
+config:
+  img_batch_size: 8
+  ray_batch_size: 4096
+  pbar_update_frequency: 10
+  pretrain_bg_step: 0
+  bg_composite_grad_step: 0
+  fg_batch_size_fg: -1
+  fg_batch_size_bg: -1
+  fg_flow_mode: zeros
+  depth_visualization_gamma: 1
+  log_raw_mask_loss: true
+  prerender_bg: false
+  train_full_image: false
+  fg_indexing_strategy:
+  num_workers: 8
+  # from dep injection
+  output:
+  writer_path:
+  train_bg:
+  train_fg:
+  render_fg:
+  prerender_bg_path:

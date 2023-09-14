@@ -1,0 +1,12 @@
+{
+    "python.sortImports.args": [
+        "--src=${workspaceFolder}"
+    ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "120",
+        "--ignore",
+        "E226,E24,W50,W690,E731",
+    ],
+    "jupyter.notebookFileRoot": "${workspaceFolder}"
+}

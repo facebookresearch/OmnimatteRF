@@ -1,0 +1,12 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+reg_tv_density:
+  name: zero_reg
+  config:
+    inputs: [reg_tv_density]
+    alpha: 1.0
+reg_tv_app:
+  name: zero_reg
+  config:
+    inputs: [reg_tv_app]
+    alpha: 1.0

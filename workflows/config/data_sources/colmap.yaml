@@ -1,0 +1,11 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+llff_camera:
+  subpath: colmap
+  near_p: 1
+  far_p: 99
+  near_min: 0.01
+  far_max: 1000
+  contraction:
+  compute_ndc_aabb: true
+  scene_scale: 1

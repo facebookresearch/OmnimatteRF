@@ -1,0 +1,10 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+input: ???
+output: ???
+scale: -1
+device: cuda:0
+finder:
+  matching: loftr
+  loftr_pretrained: outdoor
+  ransac_threshold: 3

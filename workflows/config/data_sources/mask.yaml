@@ -1,0 +1,10 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+mask:
+  subpath: masks/mask
+  trimap_width: 20
+  bg_mask_erode_width: 0
+  n_images: 0
+  blank_layer_only: false
+  extra_layers: 0
+  indices: []

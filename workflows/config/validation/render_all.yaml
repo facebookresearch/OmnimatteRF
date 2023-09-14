@@ -1,0 +1,8 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+render_all:
+  config:
+    name: render_all
+    step_size: 3000
+    use_upload_callback: true
+  pre_train: false

@@ -1,0 +1,12 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+defaults:
+  - train_both
+  - override validation: []
+  - _self_
+
+validation: {}
+
+save_final_checkpoint: false
+
+n_steps: 10

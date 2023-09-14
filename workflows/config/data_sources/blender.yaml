@@ -1,0 +1,10 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+blender_camera:
+  subpath: poses.json
+  near_default: 2
+  far_default: 6
+  contraction:
+  compute_ndc_aabb: true
+  scene_scale: 1
+  process_poses: true

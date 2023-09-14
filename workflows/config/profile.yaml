@@ -1,0 +1,18 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+defaults:
+  - train_both
+  - override validation: []
+  - _self_
+
+validation: {}
+
+trainer:
+  config:
+    img_batch_size: 4
+    ray_batch_size: 1024
+
+save_final_checkpoint: false
+
+n_steps: 10
+profile: true

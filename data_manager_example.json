@@ -1,0 +1,12 @@
+{
+  "local": {
+    "data_root": "/data/matting",
+    "output_root": "/output/matting"
+  },
+  "remote": {
+    "endpoint": "",
+    "bucket": "",
+    "access_key": "",
+    "secret_key": ""
+  }
+}

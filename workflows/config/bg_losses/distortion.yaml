@@ -1,0 +1,7 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+distortion:
+  name: distortion
+  config:
+    inputs: [bg_weight, bg_z_vals]
+    alpha: 0.02

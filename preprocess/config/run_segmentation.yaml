@@ -1,0 +1,6 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+model: COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml
+device: cuda:0
+input: ???
+output: ???

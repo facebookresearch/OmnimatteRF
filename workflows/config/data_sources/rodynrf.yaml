@@ -1,0 +1,11 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+llff_camera:
+  subpath: rodynrf
+  near_p: 0
+  far_p: 100
+  near_min: 0.01
+  far_max: 1000
+  contraction:
+  compute_ndc_aabb: true
+  process_poses: false

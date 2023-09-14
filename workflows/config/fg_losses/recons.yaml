@@ -1,0 +1,7 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+recons:
+  name: l1
+  config:
+    inputs: [composite_rgb, fg_gt_rgb]
+    alpha: 2.0

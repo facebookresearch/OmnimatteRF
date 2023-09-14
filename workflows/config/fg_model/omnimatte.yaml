@@ -1,0 +1,18 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+name: omnimatte
+config:
+  n_frames:
+  image_hw:
+  hidden_channels: 64
+  network_normalization: batch
+  max_frames: 200
+  coarseness: 10
+  feature_mode: xyt
+  feature_config:
+    pos_n_freq: 10
+  save_feature_cache_to_disk: false
+  feature_cache_device:
+train: true
+optim:
+  lr: 0.001

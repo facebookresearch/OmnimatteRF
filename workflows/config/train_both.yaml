@@ -1,0 +1,11 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+defaults:
+  - train
+  - fg_losses: [alpha_reg,brightness_reg,flow_recons,mask,recons,warped_alpha,bg_tv_reg]
+  - bg_losses: [recons,tv_reg]
+  - override fg_model: omnimatte
+  - override bg_model: tensorf
+  - _self_
+
+n_steps: 15000

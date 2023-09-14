@@ -1,0 +1,10 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+depth_matching:
+  name: depth_matching
+  config:
+    inputs: [bg_depths,gt_depths,depth_mask,global_step]
+    alpha: 0.1
+    reg_alpha: 0.5
+    reg_scales: 1
+    start_step: 200

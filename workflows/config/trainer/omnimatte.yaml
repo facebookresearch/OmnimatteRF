@@ -1,0 +1,13 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+name: omnimatte
+config:
+  img_batch_size: 24
+  ray_batch_size: 0
+  fg_batch_size_fg: 0
+  fg_batch_size_bg: 0
+  pbar_update_frequency: 10
+  num_workers: 8
+  # from dep injection
+  output:
+  writer_path:
